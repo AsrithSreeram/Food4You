@@ -1,0 +1,28 @@
+.header-card {
+    height: 420px;
+    background-color: #e3e9ff;
+    text-align: center;
+}
+
+.title-card {
+    width: 921px;
+    height: 198px;
+    margin: 0 auto;
+    position: relative;
+    top: 87px;
+    background-color: white;
+    padding: 35px 0;
+    transform: rotate(-3deg);
+}
+
+.title-card > h1 {
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 97.0524px;
+    line-height: 114px;
+}

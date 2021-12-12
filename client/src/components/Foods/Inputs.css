@@ -1,0 +1,65 @@
+.header {
+    width: 565px;
+    height: 45px;
+
+    background: #AF7EEB;
+
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.input-card {
+    width: 565px;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    background-color: #fff;
+}
+
+.input-card > input {
+    border: none;
+    border-bottom: 1px solid #AF7EEB;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.input-card > button {
+    position: absolute;
+    right: -18px;
+    bottom: -20px;
+    font-size: 20px;
+    background-color: #AF7EEB;
+    padding: 10px 16px;
+    color: #fff;
+}
+
+.btn-purple {
+    width: 451px;
+    height: 72px;
+
+    background: #AF7EEB !important;
+    border-radius: 13px !important;
+
+    font-size: 34px !important;
+    color: white !important;
+    margin: auto !important;
+    margin-top: 50px !important;
+    display: block !important;
+}
+
+button:hover {
+    background-color: #9c57f0 !important;
+    opacity: 1 !important;
+}
