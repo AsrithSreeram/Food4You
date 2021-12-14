@@ -2,7 +2,6 @@ import Inputs from "./Inputs";
 import Body from "../Search/Body";
 import Loading from "../Loading";
 import React, { useState, useEffect } from 'react'
-import axios from 'axios';
 
 
 export default function Foods() {
@@ -17,15 +16,6 @@ export default function Foods() {
             setLoading(false)
             setList([{title: 'hello'}, {title: 'hello'}])
         }, 5000);
-
-        axios
-        .get("http://localhost:5000/recipe/")
-        .then((response) => {
-          this.setState({ records: response.data });
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
     }
 
 

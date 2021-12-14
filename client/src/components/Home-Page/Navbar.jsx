@@ -1,25 +1,46 @@
 import './Navbar.css';
+import React, { useState } from 'react'
+import Login from '../Login/Login';
+import {Modal, Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
+
+    const [isLogin, setLogin] = useState(false);
+
     return (
-        <nav class={"navbar navbar-expand-lg navbar-dark bg-navbar"}>
-            <span class="navbar-brand mb-0 h1" style={{fontSize: "25px"}}>FOOD HELPER</span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ml-auto" style={{fontSize: '20px'}}>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/foods">Foods <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/search">Search</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/sign-in">Sign in</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <>
+            <nav class={"navbar navbar-expand-lg navbar-dark bg-navbar"}>
+                <span class="navbar-brand mb-0 h1" style={{fontSize: "25px"}}>FOOD HELPER</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto" style={{fontSize: '20px'}}>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/foods">Foods <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/search">Search</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" onClick={() => {setLogin(true)}} href="#">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <Modal show={isLogin} onHide={() => setLogin(false)}>
+                <Modal.Body>
+                    <Login />
+                </Modal.Body>
+
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setLogin(false)}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+        </>
     )
 }
