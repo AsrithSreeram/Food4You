@@ -13,10 +13,10 @@ body {
 
 .search > form > input {
     border: none;
-    margin-left: 10px;
-    margin-top: 6px;
     width: 500px;
-
+    height: 40px;
+    background-color: #fff;
+    display: inline;
 }
 
 img {
@@ -31,7 +31,9 @@ img {
     text-align: center;
     padding: 5px 8px;
     border-radius: 100% !important;
-    margin-top: 5px;
+    float: right;
+    margin-right: 6px;
+    margin-top: 3px;
 }
 
 .search > form > button:hover {

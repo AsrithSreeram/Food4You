@@ -1,8 +1,7 @@
 import './SearchBar.css';
 import img from '../../recources/images/magnifying-glass.png'
 import Loading from '../Loading';
-import React, { useEffect } from 'react'
-import axios from 'axios';
+import React, { useEffect } from 'react';
 
 
 export default function SearchBar(props) {
