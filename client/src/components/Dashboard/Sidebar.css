@@ -1,0 +1,97 @@
+@import url('http://fonts.cdnfonts.com/css/sofia-pro');
+
+.sidebar {
+    width: 274px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+* {
+    font-family: 'Sofia Pro' !important;
+}
+
+.sidebar > h1 {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 40px;
+}
+
+.sidebar > button {
+    background-color: white !important;
+    border: none;
+}
+
+.active > .img {
+    background: #1479ff;
+    
+}
+
+.active > span {
+    color: #1479ff;
+}
+
+.active > span:hover {
+    cursor: pointer;
+}
+.active > .img:hover {
+    cursor: pointer
+}
+
+a {
+    color: black !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.item {
+    display: block;
+    margin: 30px auto;
+}
+
+.img {
+    background: white;
+    opacity: 1;
+    width: 83px;
+    height: 63px;
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 24px;
+}
+
+.img:hover {
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.img:active {
+    box-shadow: none;
+    backdrop-filter: none;
+    transition: 0.1s ease;
+}
+
+.sidebar > button > span:hover {
+    transition: border-bottom 0.9s ease-in-out;
+}
+
+.sidebar > button > span {
+    font-weight: bold;
+    font-size: 19.3376px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.img > img {
+    width: 35px;
+    height: 35px;
+    margin-top: 12px;
+}

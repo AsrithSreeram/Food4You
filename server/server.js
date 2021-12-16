@@ -71,15 +71,8 @@ function ensure(req, res, next) {
     }
 }
 
-app.get('/is-authenticated', ensure, (req, res) => {
-    res.json({authenticated: true})
-})
-
-app.post('/update', (req, res) => {
-    let type = req.type;
-    let data = req.data;
-
-    
+app.get('/is-authenticated', (req, res) => {
+    res.json({authenticated: req.isAuthenticated()})
 })
 
 // @import url('http://fonts.cdnfonts.com/css/sofia-pro');
