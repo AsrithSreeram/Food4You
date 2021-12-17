@@ -8,6 +8,7 @@ export default function HomePage() {
             <Navbar />
             <HeaderCard />
             <Body />
+            <br/>
         </>
     )
 }

@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react'
 import Loading from "../Loading";
 import Body from "./Body";
 import axios from 'axios';
+import Navbar from '../Home-Page/Navbar'
+
 
 
 export default function Search() {
@@ -25,6 +27,7 @@ export default function Search() {
     
     return (
         <>
+        <Navbar/>
             {
                 isLoading ?
                 <Loading />

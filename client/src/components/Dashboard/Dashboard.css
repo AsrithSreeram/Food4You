@@ -1,0 +1,25 @@
+.dashboard {
+  margin-left: 20%;
+  position: fixed;
+}
+.dashboard > h2 {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44.3167px;
+  line-height: 44px;
+  margin-top: 3%;
+  color: #193b68;
+}
+
+.buttonHeadline {
+  background: #1479ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(14px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+  font-size: 24px;
+  color: white;
+  border-color: none !important;
+}

@@ -1,6 +1,8 @@
 import Inputs from "./Inputs";
 import Body from "../Search/Body";
 import Loading from "../Loading";
+import Navbar from '../Home-Page/Navbar'
+
 import React, { useState, useEffect } from 'react'
 
 
@@ -25,7 +27,9 @@ export default function Foods() {
     }, [])
 
     return (
+        
         <>
+        <Navbar/>
             {
                 !isLoading
                 ?

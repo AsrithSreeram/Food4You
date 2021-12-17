@@ -11,6 +11,11 @@ export default function Login() {
             <LoginModal
                 handleSignup={handleSignup}
                 handleLogin={handleLogin}
+                buttonColor={"#52AE64"}
+        disabledButtonColor={"#C7E4CD"}
+        buttonHoverColor={"#A7D5B0"}
+        fontFamily={"roboto"}
+
             />
         </div>
     );
