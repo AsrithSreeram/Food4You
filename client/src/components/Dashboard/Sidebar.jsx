@@ -22,11 +22,11 @@ export default function Sidebar() {
                 <span>Search</span>
             </a>
 
-            <a class="item" href="/recipe">
+            <a class="item" href="/foods">
                 <div class="img">
                     <img src={img2} />
                 </div>
-                <span>Recipe</span>
+                <span>Foods</span>
             </a>
         </div>
     )

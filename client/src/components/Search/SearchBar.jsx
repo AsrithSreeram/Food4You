@@ -7,10 +7,11 @@ import React, { useEffect } from 'react';
 export default function SearchBar(props) {
 
     document.body.style = 'background: #E3E9FF';
+    const {search, updateSearch}= props;
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        props.submit()
+        props.getSearch()
     }
 
     useEffect(() => {
@@ -20,7 +21,7 @@ export default function SearchBar(props) {
         <>
             <div class="search">
                 <form onSubmit={handleSubmit}>
-                    <input type="text" />
+                    <input type="text" value={search} onchange={updateSearch} />
                     <button type="submit">
                         <img src={img} />
                     </button>

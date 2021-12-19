@@ -12,15 +12,15 @@ export default function Navbar() {
 
     const [isLogin, setLogin] = useState(false);
 
-    const handleLogin = () => {
-        signIn();
-        // history.push("/dashboard");
-    }
+    // const handleLogin = () => {
+    //     // signIn();
+    //     history.push("/dashboard");
+    // }
 
     return (
         <>
             <nav class={"navbar navbar-expand-lg navbar-dark bg-navbar"}>
-            <a class="nav-link" href="/"><span class="navbar-brand mb-0 h1" style={{fontSize: "25px"}}>FOOD HELPER</span></a>
+            <a class="nav-link" href="/"><span class="navbar-brand mb-0 h1" style={{fontSize: "25px"}}>FOOD4YOU</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,7 +36,7 @@ export default function Navbar() {
                         <a class="nav-link" href="/dashboard">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" onClick={() => handleLogin()} href="/dashboard">Sign in</a>
+                        <a class="nav-link" href="/dashboard">Sign in</a>
                         </li>
                     </ul>
                 </div>
