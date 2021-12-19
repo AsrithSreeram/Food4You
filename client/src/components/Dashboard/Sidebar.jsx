@@ -6,7 +6,7 @@ import search from '../../recources/images/search.png'
 export default function Sidebar() {
     return (
         <div class="sidebar">
-            <a href = "/"><h1>FOOD</h1></a>
+            <a href = "/"><h1>FOOD4YOU</h1></a>
 
             <a class="item active">
                 <div class="img">
